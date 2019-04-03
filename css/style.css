@@ -53,6 +53,18 @@ a {
   margin: 0 auto;
 }
 
+h1 {
+  font-family: 'Lato',sans-serif; 
+}
+
+h2, p {
+  font-family: 'Raleway',sans-serif;
+}
+
+p {
+  line-height: 25px;
+}
+
 .main {
   padding-top: 78px;
 }
@@ -103,7 +115,7 @@ a {
 }
 
 .profile__text {
-  width: 70%;
+  width: 65%;
 }
 
 .profile__title {
@@ -175,7 +187,7 @@ a {
 }
 
 .work__description {
-  width: 48%;
+  width: 45%;
   margin-right: 90px;
 }
 
