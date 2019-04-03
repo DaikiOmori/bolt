@@ -4,6 +4,22 @@ a {
   display: inline-block;
 }
 
+h1 {
+  font-family: 'Lato',sans-serif; 
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  line-height: 25px;
+}
+
+h2, p {
+  font-family: 'Raleway',sans-serif;
+}
+
 .header,.main,.footer {
   width: 100%;
 }
@@ -51,18 +67,6 @@ a {
 .inner {
   width: 1100px;
   margin: 0 auto;
-}
-
-h1 {
-  font-family: 'Lato',sans-serif; 
-}
-
-h2, p {
-  font-family: 'Raleway',sans-serif;
-}
-
-p {
-  line-height: 25px;
 }
 
 .main {
@@ -118,10 +122,6 @@ p {
   width: 65%;
 }
 
-.profile__title {
-  font-size: 24px;
-}
-
 .profile__description {
   margin-top: 35px;
   font-size: 20px;
@@ -137,7 +137,6 @@ p {
 }
 
 .work__title {
-  font-size: 24px;
   margin-bottom: 40px;
 }
 
