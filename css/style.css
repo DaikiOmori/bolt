@@ -4,6 +4,10 @@ a {
   display: inline-block;
 }
 
+.header,.main,.footer {
+  width: 100%;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -13,6 +17,7 @@ a {
 
 .inner.header__inner {
   padding: 15px 15px;
+
 }
 
 .header__content {
@@ -49,7 +54,7 @@ a {
 }
 
 .main {
-  padding-top: 70px;
+  padding-top: 78px;
 }
 
 .title {
