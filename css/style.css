@@ -137,7 +137,7 @@ a {
   transition: all .3s
 }
 
-.img__work a:hover {
+.img__work:hover {
   opacity: 1;
 }
 
