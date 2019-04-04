@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 body {
   font-family: 'Raleway' ,sans-serif;
 }
@@ -16,15 +17,11 @@ a {
   display: inline-block;
 }
 
-.header,.main,.footer {
-  width: 100%;
-}
-
 .header {
   position: fixed;
-  width: 100%;
   background-color: #fff;
   z-index: 1;
+  width: 100%;
 }
 
 .header .header__inner {
@@ -38,7 +35,7 @@ a {
   display: inline-block;
 }
 
-.header .bolt__logo {
+.fa-bolt {
   color: #4e4e4e;
 }
 
@@ -53,6 +50,10 @@ a {
 
 .bolt__btn:hover {
   color: #333;
+}
+
+.menubtn {
+  display: none;
 }
 
 .inner {
@@ -71,6 +72,10 @@ a {
 .inner.title__inner {
   padding: 250px 0 250px 0;
   text-align: center;
+}
+
+.inner.title__inner br {
+  display: none;
 }
 
 .title .title__theme {
@@ -125,14 +130,14 @@ a {
   text-align: center;
 }
 
-.work__img a {
+.img__work {
   display: inline-block;
   margin: 80px 100px 0 0px;
   opacity: 0.7;
   transition: all .3s
 }
 
-.work__img a:hover {
+.img__work a:hover {
   opacity: 1;
 }
 
@@ -141,12 +146,12 @@ a {
   font-size: 0;
 }
 
-.work__img a:nth-child(-n+3) {
+.img__work:nth-child(-n+3) {
   margin-top: 0;
 
 }
 
-.work__img a:nth-child(3n) {
+.img__work:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -188,7 +193,7 @@ a {
   font-size: 16px;
 }
 
-.skill__content figure {
+.skill__content__figure {
   display: inline-block;
   margin-left: 180px;
 }
@@ -210,7 +215,7 @@ a {
   align-items: center;
 }
 
-.sns__inner a {
+.sns__content {
   display: inline-block;
   color: #74cfae;
   text-decoration: none;
@@ -225,7 +230,7 @@ a {
   font-size: 48px;
 }
 
-.sns__inner a:hover {
+.sns__content:hover {
   background-color: #fff;
 }
 
@@ -234,4 +239,137 @@ a {
   color: #fff;
   padding: 20px 0 25px 0;
   text-align: right;
+}
+
+
+@media screen and (max-width: 1199px){
+  .inner {
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  .profile .profile__inner {
+    display: block;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  .profile__content {
+    display: block;
+  }
+
+  .profile__content.img {
+    margin: 0 auto;    
+  } 
+
+  .profile__content.text {
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .work .work__inner {
+    text-align: center;
+  }
+
+  .img__work {
+    display: block;
+  }
+  
+  .img__work:nth-child(n) {
+    margin: 0 ;
+  }
+
+  .img__work:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+
+  .work.description {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .work__text {
+    display: block;
+  }
+
+  .work__form {
+    display: block;
+  }
+
+  .bolt__btn {
+    display: inline-block;
+  }
+
+  .skill__content {
+    display: block;
+  }
+
+  .skill__content__figure {
+    display: block;
+    margin: 80px 0 0;
+  }
+
+}
+
+@media screen and (max-width:768px){
+  .inner {
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  .contact__btn {
+    display: none!important;
+  }
+   
+  .fa-bars {
+    font-size: 10px;
+    color: #ddd;
+  }
+
+  .menubtn {
+    display: block;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: 10px;
+    border:solid 1px #ddd;
+    border-radius: 4px; 
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  .menubtn:focus {
+    outline: none;
+  }
+
+  .inner.title__inner {
+    padding: 160px 0 130px ;
+  }
+
+  .inner.title__inner br {
+    display: inline;
+  }
+
+  .title .title__theme {
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Lato',sans-serif; 
+    color: #74cfae;
+    word-wrap: break-word;
+  }
+
+  .title__content {
+    font-size: 30px;
+  }
+
+  .sns .sns__inner {
+    display: block;
+    padding: 50px 0 50px;
+  }
+
+  .sns__content {
+    display: block;
+    width: 100%;
+    margin: 0px 15px;
+  }
 }
