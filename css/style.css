@@ -74,9 +74,6 @@ a {
   text-align: center;
 }
 
-.inner.title__inner br {
-  display: none;
-}
 
 .title .title__theme {
   font-size: 90px;
@@ -221,7 +218,7 @@ a {
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
-  width: 185px;
+  width: 25%;
   padding: 20px 0 20px 0;
   transition: all .3s;
 }
@@ -242,7 +239,7 @@ a {
 }
 
 
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 768px){
   .inner {
     width: 97%;
     margin: 0 auto;
@@ -263,7 +260,7 @@ a {
   } 
 
   .profile__content.text {
-    padding-top: 20px;
+    margin-top: 20px;
     width: 100%;
   }
 
@@ -273,14 +270,13 @@ a {
 
   .img__work {
     display: block;
-  }
-  
-  .img__work:nth-child(n) {
-    margin: 0 ;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   .img__work:nth-child(3n) {
     margin-bottom: 80px;
+    margin-right: auto;
   }
 
   .work.description {
@@ -312,7 +308,7 @@ a {
 
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 767px){
   .inner {
     width: 97%;
     margin: 0 auto;
@@ -323,7 +319,7 @@ a {
   }
    
   .fa-bars {
-    font-size: 10px;
+    font-size: 8px;
     color: #ddd;
   }
 
@@ -347,10 +343,6 @@ a {
     padding: 160px 0 130px ;
   }
 
-  .inner.title__inner br {
-    display: inline;
-  }
-
   .title .title__theme {
     font-size: 80px;
     font-weight: 700;
@@ -370,6 +362,5 @@ a {
   .sns__content {
     display: block;
     width: 100%;
-    margin: 0px 15px;
   }
 }
